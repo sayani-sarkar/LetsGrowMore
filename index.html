@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EDUCare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/simpleSlider.min.css">
+<script src="dist/simpleSlider.min.js"></script>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+$color: #111
+$primary: #FFAB9D
+a
+  text-decoration: none
+  color: inherit
+
+.cta
+  position: relative
+  margin: auto
+  padding: 19px 22px
+  transition: all .2s ease
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    border-radius: 28px
+    background: rgba($primary,.5)
+    width: 56px
+    height: 56px
+    transition: all .3s ease
+  span
+    position: relative
+    font-size: 16px
+    line-height: 18px
+    font-weight: 900
+    letter-spacing: .25em
+    text-transform: uppercase
+    vertical-align: middle
+  svg
+    position: relative
+    top: 0
+    margin-left: 10px
+    fill: none
+    stroke-linecap: round
+    stroke-linejoin: round
+    stroke: $color
+    stroke-width: 2
+    transform: translateX(-5px)
+    transition: all .3s ease
+  &:hover
+    &:before
+      width: 100%
+      background: rgba($primary,1)
+    svg
+      transform: translateX(0)
+  &:active
+    transform: scale(.96)
+</style>
+</head>
+<body>
+<nav>
+        <div id="logo">EDUCare</div>
+
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="#s1">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">WordPress +</label>
+                    <a href="#c">WordPress</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="#">Themes and stuff</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                    </ul> 
+
+                </li>
+                <li>
+
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">Web Design +</label>
+                <a href="#v">Web Design</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li>
+                       
+                    <!-- Second Tier Drop Down -->        
+                    <label for="drop-3" class="toggle">Tutorials +</label>
+                    <a href="#">Tutorials</a>         
+                    <input type="checkbox" id="drop-3"/>
+
+                    <ul>
+                        <li><a href="#">HTML/CSS</a></li>
+                        <li><a href="#">jQuery</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#pp">BLOGS</a></li>
+                <li><a href="#w">CONTENT</a></li>
+                <li><a href="#contact-map">Contact</a></li>
+                <li><a href="#fot">About</a></li>
+            </ul>
+        </nav>
+
+<br>
+<div class="slider-wrapper">
+  <div class="slider">
+    <input type="radio" name="slider" class="trigger" id="one" checked="checked" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="ddd1.jpg" />
+        <figcaption class="slide-caption"><h1>EDUCArE <p>topmost profferrses are teach you for your betterment</p>
+		<a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">KNOW </a>
+		<a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">Learn</a></figcaption>
+      </figure><!-- .slide-figure -->
+    </div><!-- .slide -->
+    <input type="radio" name="slider" class="trigger" id="two" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="ddd2.jpg" />
+        <figcaption class="slide-caption"><h1>UPGRADED TECH<p>Students Can be disscus their doubt by webchat process</p>
+		<a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">KNOW</a>
+		<a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">Learn</a></figcaption>
+      </figure><!-- .slide-figure -->
+    </div><!-- .slide -->
+    <input type="radio" name="slider" class="trigger" id="three" />
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="gg.jpg" />
+        <figcaption class="slide-caption"><h1>Free Coureses<p>Students or professional take free courese to develop their skills</p>
+		<a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">KNOW</a>
+		<a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">Learn</a></figcaption>
+      </figure><!-- .slide-figure -->
+    </div><!-- .slide -->
+  </div><!-- .slider -->
+  <ul class="slider-nav">
+    <li class="slider-nav__item"><label class="slider-nav__label" for="one"></label></li>
+    <li class="slider-nav__item"><label class="slider-nav__label" for="two"></label></li>
+    <li class="slider-nav__item"><label class="slider-nav__label" for="three"></label></li>
+  </ul><!-- .slider-nav -->
+</div><!-- .slider-wrapper --><br><br>
+<h1 style="text-align:center">Welcome to new world of skill</h1>
+<section>
+  <div class="grid-flex">
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(c5.jpg);">
+      &nbsp;
+    </div>
+<div class="col col-text col-left">
+      <div class="Aligner-item">
+        <p>&ldquo;welcome to the greatest source of your carrer make knowledge from your home.&rdquo;
+          <cite>- Jim Henson</cite>
+        </p>
+      </div>
+    </div>
+  </div></section>
+<section>
+  <h3>Our Services</h3>
+  <p class="section-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div class="services-grid">
+    <div class="service service1">
+      <i class="ti-bar-chart"></i>
+      <h4>Wealth Management</h4>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <a href="#" class="cta">Read More <span class="ti-angle-right"></a>
+    </div>
+
+    <div class="service service2">
+      <i class="ti-light-bulb"></i>
+      <h4>Financial Planning</h4>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <a href="#" class="cta">Read More <span class="ti-angle-right"></a>
+    </div>
+
+    <div class="service service3">
+      <i class="ti-money"></i>
+      <h4>Investment Banking</h4>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <a href="#" class="cta">Read more <span class="ti-angle-right"></span></a>
+    </div>
+  </div>
+</section>
+<div class="cards" id="c">
+      <h2 class="header" style="text-align:center">
+Our Community</h2>
+<div class="services">
+        <div class="content content-1">
+          <div class="fab fa-twitter">
+</div>
+<h2>
+Twitter</h2>
+<p>
+The top most company are sponcer our courses and hire students from twiter,students also take discussion frm there </p>
+<a href="#">Read More</a>
+        </div>
+<div class="content content-2">
+          <div class="fab fa-instagram">
+</div>
+<h2>
+Instagram</h2>
+<p>
+Daily reserach paper and more other updatation you can watch here </p>
+<a href="#">Read More</a>
+        </div>
+<div class="content content-3">
+          <div class="fab fa-youtube">
+</div>
+<h2>
+Youtube</h2>
+<p>
+Topmost professors are give tips and tricks for your betterment</p>
+<a href="#">Read More</a>
+        </div>
+</div>
+</div>
+	<h1 style="text-align:center">Review of Our Students</h1>
+	<div class="video-container" id="v">
+  
+  <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/4_yQlcn7Abc" width="50" height="50" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+</div>
+  
+<div class="video-container">
+  <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/phTu4mFg19A" width="50" height="50" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+  
+</div>
+<div class="video-container">
+  <div class="responsive-video">
+  <iframe src="
+https://www.youtube.com/embed/dgKSqz3it50"width="50" height="50" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div></div>
+<div class="demo-wrap">  
+  <div class="demo-header">
+    <h1> Pricing Table</h1>
+    <p>pricing plan For Our courses</p>
+  </div>
+
+
+  <!-- PRICING PLANS -->
+  <section class="pricing-plans">
+    <!-- Pricing Tables -->
+    <div class="pricing-tables">
+      <!-- Plan Features -->
+      <div class="pricing-plan">
+        <h2 class="plan-title"><fontBasic</h2>
+        <div class="plan-cost">
+          <p class="plan-price">$499</p>
+          <span>/</span> 
+          <p class="plan-type">Monthly</p>
+        </div>
+        <ul class="plan-features">
+          <li>Html</li>
+          <li>CSS</li>
+          <li><span>JAVASRIPT</span></li>
+          <li><span>JQUERY</span></li>
+          <li><span>HAML</span></li>
+          <li><span>Sigle PAGE Website </span></li>
+        </ul>
+        <a class="btn-plan" href="">Select Plan</a>
+      </div>
+      <!-- "Basic" Plan -->
+      <div class="pricing-plan">
+        <h2 class="plan-title">Super</h2>
+        <div class="plan-cost">
+          <p class="plan-price">$599</p>
+          <span>|</span> 
+          <p class="plan-type">Monthly</p>
+        </div>
+        <ul class="plan-features">
+          <li>Web Development</li>
+          <li>Software Development</li>
+          <li>Project planning</li>
+          <li><span>Interview Question Answer</span></li>
+          <li><span>Resource Library</span></li>
+          <li><span>Dedicated Support</span></li>
+        </ul>
+        <a class="btn-plan" href="">Select Plan</a>
+      </div>
+      <!-- "Premium" Plan -->
+      <div class="pricing-plan featured-plan">
+        <div class="featured-ribbon">Best Value</div>
+        <h2 class="plan-title">Premium</h2>
+        <div class="plan-cost">
+          <p class="plan-price">$2099</p>
+          <span>/</span> 
+          <p class="plan-type">Monthly</p>
+        </div>
+        <ul class="plan-features">
+          <li>Python zero to hero</li>
+          <li>Responsive / Mobile Friendly website making</li>
+          <li>Unlimited Training</li>
+          <li>Startup planning</li>
+          <li><span>Resource Library</span></li>
+          <li><span>Dedicated Support</span></li>
+        </ul>
+        <a class="btn-plan cta" href="">Select Plan</a>
+      </div>
+      <!-- "Ultmate" Plan -->
+      <div class="pricing-plan">
+        <h2 class="plan-title">Ultimate</h2>
+        <div class="plan-cost">
+          <p class="plan-price">$5099</p>
+          <span>/</span> 
+          <p class="plan-type">Monthly</p>
+        </div>
+        <ul class="plan-features">
+          <li>Unlimited Templates making</li>
+          <li>Responsive / Mobile Friendly website development</li>
+          <li>Beginner to advance level coding guidence</li>
+          <li>C/C++/JAVA/ruby/C#</li>
+          <li>Resource Library</li>
+          <li>Dedicated Support</li>
+        </ul>
+        <a class="btn-plan" href="">Select Plan</a>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="team-area">
+  <div class="container">
+   <h2 class="text-center">
+Meet the team</h2>
+<div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="single-team">
+          <div class="img-area">
+            <img src="https://i.postimg.cc/Kjttv7qb/1.jpg" class="img-responsive" alt="">
+            <div class="social">
+              <ul class="list-inline">
+<li><a href="#"><img src="ff.png"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><img src="is.jpg"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><img src="in.png"><i class="fa fa-pinterest"></i></a></li>
+<li><a href="#"><img src="tw.png"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="img-text">
+            <h4>
+John Doe</h4>
+<h5><br><br><br>
+UI/UX Designer</h5>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="single-team">
+          <div class="img-area">
+            <img src="https://i.postimg.cc/25JWQ9gm/2.jpg" class="img-responsive" alt="">
+            <div class="social">
+              <ul class="list-inline">
+<li><a href="#"><img src="ff.png"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><img src="is.jpg"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><img src="in.png"><i class="fa fa-pinterest"></i></a></li>
+<li><a href="#"><img src="tw.png"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="img-text">
+            <h4>
+Dave Wood</h4>
+<h5><br>
+Project Planner</h5>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="single-team">
+          <div class="img-area">
+            <img src="https://i.postimg.cc/nckQRhN3/3.jpg" class="img-responsive" alt="">
+            <div class="social">
+              <ul class="list-inline">
+<li><a href="#"><img src="ff.png"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><img src="is.jpg"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><img src="in.png"><i class="fa fa-pinterest"></i></a></li>
+<li><a href="#"><img src="tw.png"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="img-text">
+            <h4>
+Malvin Doe</h4>
+<h5>
+Back-End Developer</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="panel-main">
+    <img src="c1.jpg" id="selected">
+  </div>
+
+  <div class="thumbs">
+    <img src="c1.jpg">
+    <img src="c2.jpg" height="288px">
+    <img src="c3.png" height="288px">
+    <img src="c4.jpg" height="288px">
+    <img src="c5.jpg" height="288px">
+  </div>
+</div><br><br>
+<div class="container11">
+	<div class="heading">Newsletter</div>
+	<div class="paragraph">Be the first to get notification about updates.</div>
+<div class="form_container">
+		<form class="subscribe-form">
+			<input type="email" name="Newsletter-Email" placeholder="Enter your email" maxlength="256" class="text-field" id="Newsletter-Email">
+			<input type="button" value="SUBSCRIBE" class="button" id="submit_form">
+		</form>
+		<div class="status_of_request f_done" id="success_message">
+			<div>Thankyou! Your submission has been recieved.</div>
+		</div>
+		<div class="status_of_request f_fail" id="failed_message">
+			<div>Oops! Something went wrong.</div>
+		</div>
+	</div></div>
+<div class="wrapper" id="pp">
+
+	<header>
+		<h1>BLOG</h1>
+	</header>
+		
+<section class="columns1">
+	
+	<div class="column1">
+		<h2>Technical blogs</h2>
+		<img 
+  alt="A baby smiling with a yellow headband."
+  src="w1.jpg"
+  
+>
+		<p>Technical blogging is a great way to share your expertise while building a potentially valuable readership. It can help you to document projects, or provide guidance to other web users. You can also monetize your content, or use your blog to market your services.</p>
+		<br><br><div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Learn More</a></div>
+	</div>
+	
+	<div class="column1">
+		<h2>Commerce blogs</h2>
+		<img 
+  alt="A baby smiling with a yellow headband."
+  src="w2.jpg"
+  
+>
+		<p>It is clear that digital skills have grown in demand beyond tech companies and outside of IT functions. In the technology domain, having people that possess the needed technical skills and strategic acumen is pivotal. </p>
+<br><br>	<div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Learn More</a></div>
+	</div>
+  <br><br>
+  <div class="column1">
+		<h2>Data science  blogs</h2>
+		<img 
+  alt="A baby smiling with a yellow headband."
+  src="w3.jpeg"
+  
+>
+		<p>Data Science Central does exactly what its name suggests and acts as an online resource hub for just about everything related to data science and big data. The site covers a wide array of data science topics regarding analytics, technology, tools, data visualization, code, and job opportunities.</p>
+	<div class="button_cont" align="center"><a class="example_a" href="add-website-here" target="_blank" rel="nofollow noopener">Learn More</a></div>
+	</div>
+	
+</section>
+<div class="container">
+		<div class="innerwrap">
+		
+			<section class="section1 clearfix">
+				<div class="textcenter">
+					<span class="shtext">Contact Us</span>
+					<span class="seperator"></span>
+					<h1>Drop Us a Mail</h1>
+				</div>
+			</section>
+		
+			<section class="section2 clearfix">
+				<div class="col2 column1 first">
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="sec2map" style='overflow:hidden;height:550px;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(19.075314480255834,72.88153973865361),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.075314480255834,72.88153973865361)});infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>mumbai<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+				<div class="col2 column2 last">
+					<div class="sec2innercont">
+						<div class="sec2addr">
+							<p>45 BC, a Latin professor at Hampden-Sydney College in Virginia</p>
+							<p><span class="collig">Phone :</span> +91 976885083</p>
+							<p><span class="collig">Email :</span> vivek.mengu016@gmail.com</p>
+							<p><span class="collig">Fax :</span> +91 9768850839</p>
+						</div>
+					</div>
+					<div class="sec2contactform">
+						<h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+						<form action="">
+							<div class="clearfix">
+								<input class="col2 first" type="text" placeholder="FirstName">
+								<input class="col2 last" type="text" placeholder="LastName">
+							</div>
+							<div class="clearfix">
+								<input  class="col2 first" type="Email" placeholder="Email">
+								<input class="col2 last" type="text" placeholder="Contact Number">
+							</div>
+							<div class="clearfix">
+								<textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+							</div>
+							<div class="clearfix"><input type="submit" value="Send"></div>
+						</form>
+					</div>
+
+				</div>
+			</section>
+		
+		</div>
+	</div>
+<div class="footer">
+  <div class="contain">
+  <div class="col" id="fot">
+    <h1>Company</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Products</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Accounts</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Resources</h1>
+    <ul>
+      <li>Webmail</li>
+      <li>Redeem code</li>
+      <li>WHOIS lookup</li>
+      <li>Site map</li>
+      <li>Web templates</li>
+      <li>Email templates</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Support</h1>
+    <ul>
+      <li>Contact us</li>
+      <li>Web chat</li>
+      <li>Open ticket</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1><font color="Red">Social</h1>
+    <ul>
+      <li><img src="fc.png" width="32" style="width: 32px;"></li>
+      <li><img src="ln.jpg" width="32" style="width: 32px;"></li>
+      <li><img src="is.jpg" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+ <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script>
+const current = document.querySelector("#selected");
+const thumbs = document.querySelectorAll(".thumbs img");
+const opacity = 0.5;
+
+// Set opacity of first image
+thumbs[0].style.opacity = opacity;
+
+thumbs.forEach(img => img.addEventListener("click", imgActivate));
+
+function imgActivate(e) {
+  // Reset opacity on all thumbs
+  thumbs.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to source of clicked image
+  current.src = e.target.src;
+
+  // Add fadeIn class
+  current.classList.add("fade-in");
+
+  // Remove fadeIn class after animation time elapsed
+  setTimeout(() => current.classList.remove("fade-in"), 500);
+
+  // Change opacity to variable value
+  e.target.style.opacity = opacity;
+}</script>
+
+
